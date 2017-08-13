@@ -21,7 +21,7 @@ Configuration of ip2range.php can be changed by editing the iniFile. The stem of
 Ip2range.php can be called with input from a pipe and to create an ip address information table.
 
 ### Create ip ranges database
-If a database is given in an iniFile a table with ip ranges can be built from ftp registries of ip address ranges assigned to countries.
+If a database is given in an iniFile a table with ip ranges can be built from ftp registries of ip address ranges assigned to countries. On a RaspberryPi model 1B this takes about 2 hours.
 
    <code>$ php ip2range.php -b</code>
 
