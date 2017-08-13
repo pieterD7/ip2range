@@ -16,7 +16,7 @@
 
 
 ## Usage
-Configuration of ip2range.php can be changed by editing the iniFile. The stem of the program name is used determining the default iniFile name. 
+Configuration of ip2range.php can be changed by editing the iniFile. The stem of the programme name is used determining the default iniFile name. 
 
 Ip2range.php can be called with input from a pipe and to create an ip address information table.
 
@@ -58,4 +58,4 @@ Name will be derived from filename.
 
 <code>CustomLog "|/usr/bin/php -f /home/pi/ip2range/ip2range.php >> ${APACHE_LOG_DIR}/extended_access.log" combined</code>
 
-Warning and or error messages are put to stderr and will be visible in http error log file.
+Warning and or error messages are put to stderr and will be visible in httpd error log file.
