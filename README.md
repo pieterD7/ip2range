@@ -7,11 +7,11 @@
 -----
 ## Installation
 
-   $ composer install
+   <code>$ composer install</code>
    
-   $ php ip2range.php 
+   <code>$ php ip2range.php </code>
    
-   $ nano ip2range.ini 
+   <code>$ nano ip2range.ini </code>
    
 
 ----
@@ -23,35 +23,35 @@ Ip2range.php can be called with input from a pipe and to create an ip address in
 ### Create ip ranges database
 If a database is given in an iniFile a table with ip ranges can be built from ftp registries of ip address ranges assigned to countries.
 
-   $ php ip2range.php -b
+   <code>$ php ip2range.php -b</code>
 
 Or with a logfile:
 
-   $ php ip2range.php -b -l logfile &
+   <code>$ php ip2range.php -b -l logfile &</code>
    
-   $ tail -f logfile
+   <code>$ tail -f logfile</code>
 
 Instead of ftp the database can be created using the zip file from ip2nation.com. This database cannot be used for inserting a cidr to.
 
-   $ php ip2range.php -z
+   <code>$ php ip2range.php -z</code>
 
 ----
 ### Insert cidrs from assets/
 Name will be derived from filename. 
 
-   $ php ip2range.php -c
+   <code>$ php ip2range.php -c</code>
 
 ----
 ### Lookup an ip address
 
-   $ php ip2range.php -ip 104.132.0.1
+   <code>$ php ip2range.php -ip 104.132.0.1</code>
    
-   A 104.132.0.1 (googlebot)
+   <code>A 104.132.0.1 (googlebot)</code>
 
 ----
 ### Extend Apache2 log file 
 
-   $ cat access.log | php ip2range.php
+   <code>$ cat access.log | php ip2range.php</code>
 
 ----
 ### As CustomLog in httpd.conf
