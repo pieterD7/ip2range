@@ -98,7 +98,7 @@ class App extends \CliApp\CliApp{
 			{
 				$a = new IpAddressV4($options['ip']);
 				$this->emit( 
-					$a->getNetworkClass($a) . " " .
+					$a->getNetworkClass() . " " .
 					$this->ipDb->resolveV4($options['ip']) . PHP_EOL
 				);
 			}
