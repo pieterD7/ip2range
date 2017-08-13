@@ -27,7 +27,7 @@ If a database is given in an iniFile a table with ip ranges can be built from ft
 
 Or with a logfile:
 
-   <code>$ php ip2range.php -b -l logfile &</code>
+   <code>$ php ip2range.php -b -l logfile -d DEBUG &</code>
    
    <code>$ tail -f logfile</code>
 
