@@ -53,7 +53,7 @@ Name will be derived from filename.
 
    <code>$ cat access.log | php ip2range.php</code>
 
-----
+
 ### As CustomLog in httpd.conf
 
 <code>CustomLog "|/usr/bin/php -f /home/pi/ip2range/ip2range.php >> ${APACHE_LOG_DIR}/extended_access.log" combined</code>
