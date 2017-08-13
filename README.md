@@ -1,10 +1,10 @@
 
 # Ip2Range
-----
+
 ## What is Ip2Range?
 >Ip2Range creates or queries a mysql database mapping ipV4 addresses to countries with the option of overriding the country code by ranges in cidr notation. For example the ip address of google-bot becomes 'google-bot' instead of 'us'. You are free to enter other ranges.
 
------
+
 ## Installation
 
    <code>$ composer install</code>
@@ -14,7 +14,7 @@
    <code>$ nano ip2range.ini </code>
    
 
-----
+
 ## Usage
 Configuration of ip2range.php can be changed by editing the iniFile. The stem of the program name is used determining the default iniFile name. 
 
@@ -35,20 +35,20 @@ Instead of ftp the database can be created using the zip file from ip2nation.com
 
    <code>$ php ip2range.php -z</code>
 
-----
+
 ### Insert cidrs from assets/
 Name will be derived from filename. 
 
    <code>$ php ip2range.php -c</code>
 
-----
+
 ### Lookup an ip address
 
    <code>$ php ip2range.php -ip 104.132.0.1</code>
    
    <code>A 104.132.0.1 (googlebot)</code>
 
-----
+
 ### Extend Apache2 log file 
 
    <code>$ cat access.log | php ip2range.php</code>
