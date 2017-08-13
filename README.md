@@ -2,7 +2,7 @@
 # Ip2Range
 
 ## What is Ip2Range?
->Ip2Range creates or queries a mysql database mapping ipV4 addresses to countries with the option of overriding the country code by ranges in cidr notation. For example the ip address the IP address of google-bot becomes 'google-bot' instead of 'us'. You are free to enter other ranges.
+>Ip2Range creates or queries a mysql database mapping ipV4 addresses to countries with the option of overriding the country code by ranges in cidr notation. For example the ip address of google-bot becomes 'google-bot' instead of 'us'. You are free to enter other ranges.
 
 
 ## Installation
