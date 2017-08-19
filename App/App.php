@@ -105,7 +105,7 @@ class App extends \CliApp\CliApp{
 		}
 		
 		// Input from pipe?		
-		if(!(isset($options['b']) || isset($options['z']) || isset($options['ip'])))
+		if(!(isset($options['b']) || isset($options['z']) || isset($options['ip']) || isset($options['c'])))
 			$this->handlePipedInput();
 		
 	}
