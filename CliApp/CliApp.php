@@ -177,6 +177,9 @@ class CliApp
         // Make the argv array an array of options starting with space-
         $iav = " " . implode(" ", $av); 
         $av1 = explode(" -", $iav);
+        
+        if(!isset($av1[1]))
+            return array();
 
         foreach($av1 as $raw){
             $val = "";
