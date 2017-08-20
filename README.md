@@ -46,7 +46,7 @@ Name will be derived from filename.
 
    <code>$ php ip2range.php -ip 104.132.0.1</code>
    
-   <code>A 104.132.0.1 (googlebot)</code>
+   <code>A googlebot</code>
 
 
 ### Extend Apache2 log file 
@@ -56,6 +56,6 @@ Name will be derived from filename.
 
 ### As CustomLog in httpd.conf
 
-<code>CustomLog "|/usr/bin/php -f /home/pi/ip2range/ip2range.php >> ${APACHE_LOG_DIR}/extended_access.log" combined</code>
+<code>CustomLog "|/usr/bin/php /home/pi/ip2range/ip2range.php -out ${APACHE_LOG_DIR}/extended_access.log" combined</code>
 
 Warning and or error messages are put to stderr and will be visible in httpd error log file.
