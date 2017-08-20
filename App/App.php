@@ -60,7 +60,7 @@ class App extends \CliApp\CliApp{
 	
 		global $argv;
 
-		echo "USAGE: " . $argv[0] . " [-h] | [-ip ipaddress] | [ -z [zipfile] | -b ] ";
+		echo "USAGE: " . $argv[0] . " [-h] | [-ip ipaddress] | [ -z [zipfile] | -b | -c] ";
 		echo "[-l logfile] [-i inifile] [-d loglevel]" . PHP_EOL;
 		echo "DESCR: Creates table(s) in the database with ip ranges or extends ip addresses ";
 		echo "in piped input when no options are given." . PHP_EOL;
