@@ -9,5 +9,6 @@ spl_autoload_register(function($className){
 
 //$a = new \Tests\Tests(new \App\App(new \CliApp\Logger(\CliApp\LogLevel::DEBUG)));
 //$a->runTests();
-$a = new \App\App(new \CliApp\Logger(\CliApp\LogLevel::DEBUG));
+if(empty($a))	
+	$a = new \App\App(new \CliApp\Logger(\CliApp\LogLevel::DEBUG));
 ?>
