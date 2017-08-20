@@ -61,7 +61,7 @@ class IpDb{
 		if(strpos($ip, "255") === 0)
 			return;
 			
-/*		$q = "SELECT 
+		$q = "SELECT 
 			country
 		FROM " .
 			$this->table . "
@@ -72,15 +72,15 @@ class IpDb{
 		LIMIT 0,1;";
 		
 		return $this->db->row($q)['country'];
-*/			
-		return $this->db
+			
+	/*	return $this->db
 			->select(array("country"))
 			->from($this->table)
 			->where("ip <= INET_ATON(:ip) ")
 			->bindValues(array("ip" => $ip))
 			->orderByDESC(array("ip"))
 			->limit(0,1)
-			->row()['country'];
+			->row()['country']; */
 	}
 	
 	public function insertSubRange(IpRange $iprange /* B */){
