@@ -33,6 +33,9 @@ class App extends \CliApp\CliApp{
 			),
 			array(
 				"short" => "l:"
+			),
+			array(
+				"short" => "out:"
 			)
 		);
 		
@@ -140,14 +143,8 @@ class App extends \CliApp\CliApp{
 		$fd = fopen("php://stdin", "r");
 		ob_implicit_flush (true);
 
-		while(is_resource($fd) && (false !== ($pin = fread($fd, 8192)))){
-			$praw .= $pin;
-			foreach(explode("\n", $praw)as $a){ 
-				$input .= $a . PHP_EOL;
-			}
+		while(is_resource($fd) && (false !== ($input = fgets($fd)) && !feof($fd))){
 
-			fclose($fd); 
-						
 			$output = $input;
 	
 			preg_match_all("/\d{1,3}[.]\d{1,3}[.]\d{1,3}[.]\d{1,3}/", $input, $ipsV4);
@@ -176,6 +173,7 @@ class App extends \CliApp\CliApp{
 				$this->emit($output . PHP_EOL);
 		
 		}
+		fclose($fd);
 	}
 	
 	private function createTableFromZip($options){
