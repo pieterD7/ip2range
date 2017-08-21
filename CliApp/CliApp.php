@@ -87,7 +87,8 @@ class CliApp
     
         global $argv;
     
-        echo "       -l    Log file name. Defaults to stderr." . PHP_EOL;
+	echo "       -out  Output filename." . PHP_EOL;
+        echo "       -l    Log filename. Defaults to stderr." . PHP_EOL;
         echo "       -i    Inifile to parse. Defaults to " . str_replace(".php", "", $argv[0]) . ".ini." . PHP_EOL;
         echo "       -d    Loglevel. Can be ERROR or DEBUG." . PHP_EOL;
         echo PHP_EOL;
