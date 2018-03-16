@@ -54,8 +54,8 @@ Name will be derived from filename.
    <code>$ cat access.log | php ip2range.php</code>
 
 
-### As CustomLog in httpd.conf
+### As CustomLog in httpd.conf (not recommended)
 
 <code>CustomLog "|/usr/bin/php /home/pi/ip2range/ip2range.php -out ${APACHE_LOG_DIR}/extended_access.log" combined</code>
 
-Warning and or error messages are put to stderr and will be visible in httpd error log file.
+Warning and error messages are put to stderr and will be visible in httpd error log file.
