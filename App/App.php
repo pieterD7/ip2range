@@ -163,7 +163,7 @@ class App extends \CliApp\CliApp{
 						else
 							$r = "";
 								
-						$output = str_replace($ip, $ip . $r, $output);
+						$output = str_replace($ip, $r, $output);
 					}
 				}
 			}				
