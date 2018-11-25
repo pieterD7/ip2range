@@ -52,6 +52,7 @@ Name will be derived from filename.
 ### Extend Apache2 log file 
 
    <code>$ cat access.log | php ip2range.php</code>
+   Line endings in piped input work only in php < 6
 
 
 ### As CustomLog in httpd.conf
