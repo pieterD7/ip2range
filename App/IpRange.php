@@ -19,7 +19,7 @@ class IpRange{
 	}
 	
 	public function getCC(){
-		return strtolower($this->cc);
+		return $this->cc;
 	}
 	
 	public function getIpFrom(){
